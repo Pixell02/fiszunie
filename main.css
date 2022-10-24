@@ -19,9 +19,9 @@ html body {
 /* layout */
 
 .logo {
-  margin-left: 25em;
+  margin: 4vh 5vw;
+
   width: 10em;
-  height: 10em;
 }
 
 .hero {
@@ -35,7 +35,7 @@ html body {
 
 .hero div {
   align-self: center;
-  margin-top: 10em;
+  margin-top: 7em;
 }
 
 .title {
@@ -57,7 +57,7 @@ span {
   display: inline-flex;
   width: 15em;
   height: 3em;
-  margin: 100px;
+  margin: 2em 100px;
   perspective: 1000px;
 }
 
