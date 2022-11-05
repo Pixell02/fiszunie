@@ -19,14 +19,37 @@
     <title>Fiszunie</title>
   </head>
   <body>
-    <section class="hero">
-      <div class="logo-container">
-        <img class="logo" src="/img/logo_fiszunie.png" alt="logo" />
-        <img class="logo" src="/img/logo_fiszunie.png" alt="logo" />
+    <div class="sidebar-container">
+      <div class="sidebar-center-section">
+        <a class="center-section-buttons" href="#">Strona głowna</a>
+        <a class="center-section-buttons" href="#">Aktualnosci</a>
+        <a class="center-section-buttons" href="#">O aplikacji</a>
+        <a class="center-section-buttons" href="#">O nas</a>
+        <a class="center-section-buttons" href="#">Fiszunie Premium</a>
       </div>
+      <div class="sidebar-right-section">
+        <img
+          class="right-section-hamburgermenu"
+          src="https://freesvg.org/img/menu-icon.png"
+        />
+      </div>
+    </div>
+    <div class="hamburger-menu-container">
+      <ul class="hamburger-menu">
+        <li class="li-hamburger-menu" href="#">Strona głowna</li>
+        <li class="li-hamburger-menu" href="#">Aktualnosci</li>
+        <li class="li-hamburger-menu" href="#">O aplikacji</li>
+        <li class="li-hamburger-menu" href="#">O nas</li>
+        <li class="li-hamburger-menu" href="#">Fiszunie Premium</li>
+      </ul>
+    </div>
+    <div class="logo-container">
+      <img class="logo" src="/img/logo_fiszunie.png" alt="logo" />
+      <img class="logo" src="/img/logo_fiszunie.png" alt="logo" />
+    </div>
+    <section class="hero">
       <div>
         <h1 class="title observe">FISZUNIE</h1>
-
         <span class="log-in"><a href="#"></a></span>
         <span class="register"><a href="#"></a></span>
       </div>
@@ -47,12 +70,85 @@
     </ul>
     <div class="project-cont">
       <div class="about-project-container observe">
-        <h1>O aplikacji</h1>
-        <p>
-          Aplikacja powstała w celu połączenia rozrywki z nauką oraz rywalizacją
-        </p>
+        <div class="about-app-content news">
+          <h1>Aktualności</h1>
+          <div class="news-content">
+            <p class="date">05.11.2022</p>
+            <p class="inner-content">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <div class="inner-img-container">
+              <img
+                src="/img/fiszki.gif"
+                alt="fiszki"
+                class="inner-img-content"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="project-cont">
+      <div class="about-project-container observe">
+        <div class="about-app-content">
+          <div class="column">
+            <h1>O aplikacji</h1>
+            <p>
+              Aplikacja powstała w celu połączenia rozrywki z nauką oraz
+              rywalizacją. Jest to genialne narzędzie do uczenia się nieznanych
+              słówek w językach obcych czy zapamiętywania dat ważnych w
+              historii.
+            </p>
+          </div>
+        </div>
+        <img
+          src="/img/fiszunie_o_aplikacji_1.gif"
+          alt="fiszunie_o_aplikacji_1"
+          width="400px"
+          id="animation1"
+        />
+      </div>
+    </div>
+    <div class="project-cont">
+      <div class="about-project-container observe">
+        <div class="about-app-content">
+          <img
+            src="/img/fiszunie_o_aplikacji_1.gif"
+            alt="fiszunie_o_aplikacji_1"
+            width="400px"
+            id="animation1"
+          />
+          <div class="column">
+            <h1>O nas</h1>
+            <p>Młodzi seniorzy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-cont">
+      <div class="about-project-container observe">
+        <div class="about-app-content">
+          <h1>Fiszunie premium</h1>
+          <p>Jest to dodatek umożliwiający sprawdzanie statystyk itp.</p>
+        </div>
+        <img
+          src="/img/fiszunie_o_aplikacji_1.gif"
+          alt="fiszunie_o_aplikacji_1"
+          width="400px"
+          id="animation1"
+        />
+      </div>
+    </div>
+    <footer class="footer"><p>Created by Młodzi Seniorzy 2022</p></footer>
     <script src="main.js"></script>
   </body>
 </html>
