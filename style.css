@@ -39,10 +39,9 @@ html body {
   right: 0;
   display: flex;
   justify-content: right;
-  background-color:  #5f3dc4;
+  background-color: #5f3dc4;
   border-radius: 0 0 0 3vh;
   z-index: 20;
-  
 }
 .logo {
   width: 100px;
@@ -72,37 +71,48 @@ html body {
 }
 .center-section-buttons:active,
 .li-hamburger-menu:active {
-  background-color: rgb(255, 21, 60);
+  background-color: rgb(59, 67, 168);
 }
 .navbar {
   position: fixed;
 }
 /* Hamburger menu */
 .right-section-hamburgermenu {
-  width: 100px;
-  padding: 10px 20px 0px 10px;
+  width: 75px;
+  padding: 1em;
   display: none;
   cursor: pointer;
 }
 .hamburger-menu-container {
   padding-top: 84px;
   position: absolute;
+  top: -1vh;
+  right: 0vw;
+  z-index: 5;
 }
 .li-hamburger-menu {
-  padding: 10px;
+  padding: 20px;
   background-color: rgb(134, 181, 252);
   color: white;
   font-weight: 500;
   font-size: 19px;
   justify-content: right;
 }
+
+.li-hamburger-menu a {
+  color: white;
+  text-decoration: none;
+}
+
 .hamburger-menu {
-  opacity: 0;
+  transform: translateX(100%);
   transition: opacity 1s;
+  list-style: none;
 }
 .hamb-menu-opacity-1 {
+  transform: translateX(0%);
   opacity: 1;
-  transition: opacity 1s;
+  transition: all 1s;
 }
 /* Media */
 @media all and (max-width: 950px) {
@@ -381,25 +391,23 @@ span a:hover {
 .about-project-container {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 600px;
-  margin-top: 1em;
+  width: 100%;
   opacity: 0;
-  margin-left: 100px;
-  margin-right: 100px;
   display: flex;
   justify-content: left;
-  
 }
 .project-cont {
-  height: 500px;
+  padding: 5% 10%;
+  height: 100vh;
+  margin: auto;
 }
 .about-project-container p {
   font-size: 20px;
 }
 .transition {
-  transition: ease-in-out 0.8s;
+  transition: ease-in-out 1s;
   opacity: 1;
-  margin-top: 10em;
+  margin-top: 5em;
 }
 #animation1 {
   margin-left: 20px;
@@ -409,29 +417,22 @@ span a:hover {
   width: 70%;
   display: flex;
   flex-direction: row;
-  
 }
 .date {
   opacity: 0.4;
 }
-.inner-content {
-  
+.news-text {
+  color: #3f3f3f;
 }
 .news-content {
   display: flex;
   flex-direction: column;
+  gap: 1em;
   justify-content: center;
-  padding: 1em;
-  color: white;
-  background-color: #7028e4;
-  border-radius: 10px;
-  
 }
 .inner-img-container {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 1em 0 1em 0;
 }
 .inner-img-content {
   width: 500px;
@@ -443,17 +444,37 @@ span a:hover {
   flex-direction: column;
 }
 .footer {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 25px;
-  height: 70px;
-  background-color: #5f3dc4;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  height: 3em;
+  background-color: black;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+/* zibi changes */
+
+#about-app,
+#premium {
+  background-color: #8063d8;
+}
+
+#animation1 {
+  width: 500px;
+
+  border-radius: 25%;
+  border: 4px solid #862e9c;
+}
+
+.project-cont h1 {
+  font-size: 48px;
+  color: black;
 }
